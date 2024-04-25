@@ -6,6 +6,7 @@ import Route from "./Route.js";
 export const allRoutes = [
   new Route("/", "Accueil", "/pages/home.html"),
   new Route("/galerie", "la galerie", "/pages/galerie.html"),
+  new Route("/menu", "le Menu", "/pages/menu.html"),
 ];
 6;
 7;

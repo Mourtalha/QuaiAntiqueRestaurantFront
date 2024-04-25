@@ -12045,4 +12045,22 @@ p {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s;
+}
+
+.row-reserve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+}
+.row-menu h3, .row-menu .h3 {
+  font-family: "Mind Madurai", serif;
+  font-weight: 400;
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */
