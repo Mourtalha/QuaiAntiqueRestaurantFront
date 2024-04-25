@@ -21,6 +21,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
   &::before {
     content: "";
     position: absolute;
@@ -84,11 +85,7 @@ p {
     transition: all 0.3s;
   }
 }
-.row-reserve {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .row-menu {
   display: flex;
   align-items: center;
@@ -99,4 +96,7 @@ p {
     font-weight: 400;
     font-style: normal;
   }
+}
+.form-label {
+  color: $primary;
 }
