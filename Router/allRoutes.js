@@ -10,7 +10,13 @@ export const allRoutes = [
   new Route("/signin", "Connexion", "/pages/auth/signin.html"),
   new Route("/signup", "Inscription", "/pages/auth/signup.html"),
   new Route("/account", "Mon compte", "/pages/auth/account.html"),
-  new Route("/editPassword", "Mon compte", "/pages/auth/editPassword.html"),
+  new Route(
+    "/editPassword",
+    "Changement de mot de passe",
+    "/pages/auth/editPassword.html"
+  ),
+  new Route("/allResa", "Vos réservation", "/pages/reservation/allResa.html"),
+  new Route("/reserver", "Reserver", "/pages/reservation/reserver.html"),
 ];
 6;
 7;
