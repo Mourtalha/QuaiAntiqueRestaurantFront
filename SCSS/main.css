@@ -12070,4 +12070,14 @@ p {
   display: block;
   color: #292222;
   padding: 10px;
+}
+
+.cancelResa {
+  padding: 80px;
+}
+.cancelResa button {
+  background-color: green;
+}
+.cancelResa a {
+  background-color: #906427;
 }/*# sourceMappingURL=main.css.map */

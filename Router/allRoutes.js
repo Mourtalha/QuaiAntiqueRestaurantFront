@@ -17,6 +17,7 @@ export const allRoutes = [
   ),
   new Route("/allResa", "Vos réservation", "/pages/reservation/allResa.html"),
   new Route("/reserver", "Reserver", "/pages/reservation/reserver.html"),
+  new Route("/cancelResa", "Annulation", "/pages/reservation/cancelResa.html"),
 ];
 6;
 7;

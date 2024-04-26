@@ -109,3 +109,13 @@ p {
     padding: 10px;
   }
 }
+.cancelResa {
+  padding: 80px;
+
+  button {
+    background-color: green;
+  }
+  a {
+    background-color: $primary;
+  }
+}
