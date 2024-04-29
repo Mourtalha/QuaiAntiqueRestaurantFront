@@ -1,0 +1,9 @@
+
+
+   
+
+if (isConnected()) {
+  alert("vous etes connecté");
+} else {
+  alert("vous n'est pas connecté");
+}

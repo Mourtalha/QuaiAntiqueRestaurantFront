@@ -1,15 +1,17 @@
 export default class Route {
-  2;
-  constructor(url, title, pathHtml, pathJS = "") {
-    3;
+  constructor(url, title, pathHtml, authorize, pathJS = "") {
     this.url = url;
-    4;
     this.title = title;
-    5;
     this.pathHtml = pathHtml;
-    6;
     this.pathJS = pathJS;
-    7;
+    this.authorize = authorize;
   }
-  8;
 }
+
+/*
+[] -> Tout le monde peut y accéder
+["disconnected"] -> Réserver aux utilisateurs déconnecté 
+["client"] -> Réserver aux utilisateurs avec le rôle client 
+["admin"] -> Réserver aux utilisateurs avec le rôle admin 
+["admin", "client"] -> Réserver aux utilisateurs avec le rôle client OU admin
+*/

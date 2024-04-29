@@ -1,31 +1,50 @@
 import Route from "./Route.js";
-2;
-3;
+
 //Définir ici vos routes
-4;
 export const allRoutes = [
-  new Route("/", "Accueil", "/pages/home.html"),
-  new Route("/galerie", "la galerie", "/pages/galerie.html"),
-  new Route("/menu", "le Menu", "/pages/menu.html"),
-  new Route("/signin", "Connexion", "/pages/auth/signin.html"),
+  new Route("/", "Accueil", "/pages/home.html", []),
+  new Route(
+    "/galerie",
+    "La galerie",
+    "/pages/galerie.html",
+    [],
+    "/js/galerie.js"
+  ),
+  new Route(
+    "/signin",
+    "Connexion",
+    "/pages/auth/signin.html",
+    ["disconnected"],
+    "/js/auth/signin.js"
+  ),
+  new Route("/menu", "le Menu", "/pages/menu.html", [], "/js/menu.js"),
   new Route(
     "/signup",
     "Inscription",
     "/pages/auth/signup.html",
+    ["disconnected"],
     "/js/auth/signup.js"
   ),
-  new Route("/account", "Mon compte", "/pages/auth/account.html"),
+  new Route("/account", "Mon compte", "/pages/auth/account.html", [
+    "client",
+    "admin",
+  ]),
   new Route(
     "/editPassword",
     "Changement de mot de passe",
-    "/pages/auth/editPassword.html"
+    "/pages/auth/editPassword.html",
+    ["client", "admin"]
   ),
-  new Route("/allResa", "Vos réservation", "/pages/reservation/allResa.html"),
-  new Route("/reserver", "Reserver", "/pages/reservation/reserver.html"),
-  new Route("/cancelResa", "Annulation", "/pages/reservation/cancelResa.html"),
+  new Route(
+    "/allResa",
+    "Vos réservations",
+    "/pages/reservations/allResa.html",
+    ["client"]
+  ),
+  new Route("/reserver", "Réserver", "/pages/reservations/reserver.html", [
+    "client",
+  ]),
 ];
-6;
-7;
 //Le titre s'affiche comme ceci : Route.titre - websitename
-8;
+
 export const websiteName = "Quai Antique";
