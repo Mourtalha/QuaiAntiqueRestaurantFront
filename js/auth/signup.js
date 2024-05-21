@@ -8,6 +8,7 @@ const inputValidationPassword = document.getElementById(
   "ValidatePasswordInput"
 );
 const btnValidation = document.getElementById("btn-validation-inscription");
+const formInscription = document.getElementById("formulaireInscription");
 
 inputNom.addEventListener("keyup", validateForm);
 inputPreNom.addEventListener("keyup", validateForm);
@@ -108,10 +109,10 @@ function InscrireUtilisateur() {
   myHeaders.append("Content-Type", "application/json");
 
   const raw = JSON.stringify({
-    firstName: "test fetch",
-    lastName: "test fetch",
-    email: "test1@email.com",
-    password: "Azerty123",
+    firstName: "Test fatch",
+    lastName: "test fatch",
+    email: "testdepuisPostman10@email.com",
+    password: "Azerty11@",
   });
 
   const requestOptions = {
@@ -121,7 +122,7 @@ function InscrireUtilisateur() {
     redirect: "follow",
   };
 
-  fetch("http://localhost:8000/api/registration", requestOptions)
+  fetch("http://127.0.0.1:8000/api/registration", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.error(error));
